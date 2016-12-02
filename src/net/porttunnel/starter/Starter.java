@@ -2,18 +2,12 @@ package net.porttunnel.starter;
 
 import java.util.Scanner;
 
-import net.porttunnel.comment.MapBean;
 import net.porttunnel.config.Config;
 import net.porttunnel.pool.ConnectionPool;
-import net.porttunnel.pormap.Listener;
 import net.porttunnel.pormap.PortMap;
 import net.porttunnel.tunnel.TunnelFactory;
 
 public class Starter {
-
-	private static Listener listener;
-	//private static PortMap portmap;
-	
 	
 	public Starter() {
 		// TODO Auto-generated constructor stub

@@ -1,6 +1,5 @@
 package net.porttunnel.pormap;
 
-import java.io.IOException;
 import java.net.BindException;
 import java.net.InetSocketAddress;
 import java.net.ServerSocket;

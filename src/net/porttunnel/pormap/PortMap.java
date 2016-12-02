@@ -1,6 +1,5 @@
 package net.porttunnel.pormap;
 
-import java.net.Socket;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -9,8 +8,6 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 import org.apache.commons.configuration.HierarchicalConfiguration;
-import org.apache.commons.configuration.HierarchicalConfiguration.Node;
-import org.apache.commons.configuration.tree.ConfigurationNode;
 import org.apache.commons.lang.StringUtils;
 
 import net.porttunnel.comment.*;

@@ -7,19 +7,11 @@ import java.io.IOException;
 import java.net.Socket;
 import java.net.SocketException;
 import java.net.SocketTimeoutException;
-import java.net.UnknownHostException;
-import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import org.apache.commons.configuration.HierarchicalConfiguration;
-
 import net.porttunnel.comment.Peer;
-import net.porttunnel.config.Config;
-import net.porttunnel.pormap.PortMap;
-import net.porttunnel.tunnel.Tunnel;
 import net.porttunnel.tunnel.TunnelFactory;
 
 public class PoolManager implements Runnable {
@@ -36,7 +28,7 @@ public class PoolManager implements Runnable {
 	}
 	
 	public PoolManager(Map<String, Socket> upper) {
-		this.upper = upper;
+		PoolManager.upper = upper;
 	}
 	
 	public boolean start(){

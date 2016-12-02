@@ -5,11 +5,7 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.ConnectException;
-import java.net.InetSocketAddress;
-import java.net.ServerSocket;
 import java.net.Socket;
-import java.net.UnknownHostException;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
@@ -21,7 +17,6 @@ import org.apache.commons.lang.StringUtils;
 
 import net.porttunnel.comment.*;
 import net.porttunnel.config.Config;
-import net.porttunnel.pormap.Listener;
 
 public class ConnectionPool {
 	private static final int MAX_SIZE = 10 * 1024;  //支持通讯包的最大字节数
@@ -76,7 +71,7 @@ public class ConnectionPool {
 		Iterator<Entry<String, Socket>> itor = idleReverseConnection.entrySet().iterator();
 		while (itor.hasNext()){
 			Map.Entry<String, Socket> entry = itor.next();
-			String key = entry.getKey();
+			//String key = entry.getKey();
 			Socket socket = entry.getValue();
 			try {
 				socket.close();
