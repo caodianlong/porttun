@@ -1,0 +1,21 @@
+<config>
+    <portmap>
+        <!-- "ProxyHost" is host of a tunnel where it from  -->
+        <!--
+        <map SrcIp="" SrcPort="3389" DestIP="127.0.0.1" DestPort="1080" ProxyHost="" />
+        <map SrcIp="" SrcPort="1081" DestIP="172.18.9.52" DestPort="26000" ProxyHost="" />
+        <map SrcIp="" SrcPort="1081" DestIP="127.0.0.1" DestPort="26000" ProxyHost="172.18.9.52" /> 
+         -->
+    </portmap>
+    <pool>
+        <!-- the "Port" is listening port for "tunnel" form the other side, 0 meant no listening -->
+        <port>0</port>
+        <!-- "tunnel" is connection to the other side who is listening -->
+        <tunnel>
+            <!--
+             <connect DestIP="10.137.37.2" DestPort="1088" />
+            -->
+           <connect DestIP="10.137.37.2" DestPort="1088" />
+        </tunnel>
+    </pool>
+</config>
